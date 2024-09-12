@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "slug": "how-to-learn-nextjs",
+  "title": "How to Learning Next",
+  "content": "Next.js is a powerful React framework that enables server-side rendering and static site generation for React applications. This guide will walk you through setting up your first Next.js project and understanding its core features.",
+  "author": "Jane Doe"
+}
