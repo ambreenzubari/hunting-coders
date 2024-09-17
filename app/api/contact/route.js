@@ -1,14 +1,22 @@
-// http://localhost:3000/api/getblog?slug=how-to-learn-javascripthttp://localhost:3000/api/getblog?slug=how-to-learn-javascript
-
 import * as fs from "fs/promises";
 import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
   try {
+    // Parse the incoming JSON request body
     const data = await req.json();
-    console.log(data);
-    return NextResponse.json(data);
+    let files = await fs.readdir('app/contactdata')
+    // Write the parsed data to a file, converting it to a string
+    await fs.writeFile(`app/contactdata/${files.length+1}.json`, JSON.stringify(data, null, 2)); // null, 2 is for pretty printing
+
+    console.log("Data saved to file:", data);
+
+    // Return the data back in the response
+    return NextResponse.json({ message: "Data saved successfully", data });
   } catch (err) {
-    return NextResponse.json("ERROR", err);
+    console.error("Error saving data:", err);
+
+    // Handle errors and return error response
+    return NextResponse.json({ error: "Failed to save data", details: err });
   }
 }
