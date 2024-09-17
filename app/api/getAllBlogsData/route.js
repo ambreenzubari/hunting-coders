@@ -5,8 +5,6 @@ export async function GET(req) {
   try {
     // Read the directory asynchronously
     const files = await fs.readdir("blogdata");
-    console.log("Files in blogdata:", files);
-
     // If no files are found, return an empty array with a message
     if (files.length === 0) {
       return NextResponse.json(
@@ -30,8 +28,6 @@ export async function GET(req) {
         allBlogs = allBlogs.concat(blog); // Add individual blog objects to the main array
 
       } catch (fileError) {
-        console.error(`Error reading/parsing file: ${file}`, fileError);
-
         // Handle specific error related to file reading or JSON parsing
         if (fileError.code === "ENOENT") {
           return NextResponse.json(
@@ -58,7 +54,6 @@ export async function GET(req) {
     // Send the response with the list of blogs as a single flat array of objects
     return NextResponse.json(allBlogs, { status: 200 });
   } catch (err) {
-    console.error("ERROR reading directory:", err);
 
     // Handle specific cases where the directory doesn't exist
     if (err.code === "ENOENT") {

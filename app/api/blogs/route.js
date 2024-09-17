@@ -6,7 +6,6 @@ export async function GET(req) {
   try {
     // Read the directory asynchronously
     const files = await fs.readdir("blogdata");
-    console.log("Files in blogdata:", files);
 
     // If no files are found, return an empty array with a message
     if (files.length === 0) {
@@ -20,7 +19,6 @@ export async function GET(req) {
     return NextResponse.json( files , { status: 200 });
 
   } catch (err) {
-    console.error("ERROR reading directory:", err);
 
     // Handle specific cases where the directory doesn't exist
     if (err.code === 'ENOENT') {
