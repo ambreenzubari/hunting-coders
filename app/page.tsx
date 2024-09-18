@@ -3,16 +3,19 @@ import Link from "next/link";
 import { FaNewspaper } from "react-icons/fa";
 
 export const metadata = {
-  title: "NEXT JS PAGE",
-  description: "My Page Description",
+  title: "Hunting Coder",
+  description: "Coding blogs by a coder",
   icons: {
     icon: "/icon.png", // Make sure the path is correct
+  },
+  manifests: {
+    manifest: "/manifest.json",
   },
   // Add keywords for SEO
   keywords: "Next.js, SEO, JavaScript, Web Development, Coding Tutorials",
   // Open Graph meta tags for social sharing
   openGraph: {
-    title: "NEXT JS PAGE - Empowering Developers",
+    title: "Hunting Coder - Empowering Developers",
     description:
       "Learn Next.js with our comprehensive tutorials and coding guides.",
     url: "https://yourwebsite.com", // Your website URL
@@ -21,7 +24,7 @@ export const metadata = {
         url: "/images/og-image.png", // Replace with an actual image
         width: 800,
         height: 600,
-        alt: "NEXT JS PAGE",
+        alt: "Hunting Coder",
       },
     ],
     type: "website",
@@ -29,7 +32,7 @@ export const metadata = {
   // Twitter card metadata for better visibility on Twitter
   twitter: {
     card: "summary_large_image",
-    title: "NEXT JS PAGE - Empowering Developers",
+    title: "Hunting Coder - Empowering Developers",
     description:
       "Learn Next.js with our comprehensive tutorials and coding guides.",
     images: ["/images/twitter-card-image.png"], // Replace with a valid image path
@@ -57,6 +60,7 @@ export default async function Home(props: any) {
           name="description"
           content="Hunting Coder - A blog for hunting coders by a hunting coder"
         />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

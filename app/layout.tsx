@@ -12,6 +12,8 @@ export const metadata: Metadata = {
   icons: {
     icon: "./favicon.ico",
   },
+  manifest: "./manifest.json",
+  // Add keywords for SEO
 };
 
 export default function RootLayout({
