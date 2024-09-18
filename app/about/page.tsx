@@ -5,8 +5,8 @@ import { BsChatDots, BsLightbulb, BsBuilding } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8">
-      <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl bg-white shadow-lg rounded-3xl p-6 sm:p-8 md:p-10 mx-auto">
+    <div className="bg-gradient-to-b from-gray-100 to-gray-200 min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 lg:p-12">
+      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-3xl p-6 sm:p-8 md:p-10">
         {/* Intro Section */}
         <div className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
@@ -78,8 +78,8 @@ const About = () => {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">
             Our Core Values
           </h2>
-          <div className="flex flex-col sm:flex-row sm:space-x-6">
-            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 sm:mb-0 flex items-center space-x-4">
+          <div className="flex flex-col lg:flex-row lg:space-x-6">
+            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 lg:mb-0 flex items-center space-x-4">
               <BsChatDots className="text-purple-600 text-2xl sm:text-3xl" />
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Community Support</h3>
@@ -88,7 +88,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 sm:mb-0 flex items-center space-x-4">
+            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 lg:mb-0 flex items-center space-x-4">
               <BsLightbulb className="text-green-600 text-2xl sm:text-3xl" />
               <div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Innovation</h3>
@@ -114,8 +114,8 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4 sm:mb-6 text-center">
             What Our Users Say
           </h2>
-          <div className="flex flex-col sm:flex-row sm:space-x-8">
-            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 sm:mb-0">
+          <div className="flex flex-col lg:flex-row lg:space-x-8">
+            <div className="flex-1 bg-white shadow-md rounded-lg p-4 sm:p-6 mb-6 lg:mb-0">
               <p className="text-gray-700 mb-4">
                 "The tutorials provided on this platform are fantastic! They
                 have helped me level up my coding skills significantly."

@@ -72,9 +72,9 @@ const Contact = () => {
   });
 
   return (
-    <div className="min-h-screen/2 bg-gradient-to-r from-blue-50 to-blue-100 p-8">
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl border border-gray-200 p-8">
-        <h2 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">
+    <div className="min-h-screen/2 bg-gradient-to-r from-blue-50 to-blue-100 p-4 md:p-8">
+      <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-xl border border-gray-200 p-6 md:p-8">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 mb-6 md:mb-8 text-center">
           Contact Us
         </h2>
         
@@ -199,29 +199,28 @@ const Contact = () => {
           </div>
 
           {/* Contact Info Section */}
-          <div className="flex-1 mt-8 md:mt-0">
+          <div className="flex-1 mt-6 md:mt-0">
             <div className="p-6 bg-white shadow-md rounded-lg border border-gray-200">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-800">Our Contact Information</h3>
+              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">Our Contact Information</h3>
               <div className="mb-4 flex items-center">
-                <FaMapMarkerAlt className="text-blue-500 text-2xl mr-4" />
-                <p className="text-gray-700">123 Main Street, Suite 500, City, Country</p>
+                <FaMapMarkerAlt className="text-blue-500 text-xl md:text-2xl mr-4" />
+                <p className="text-gray-700 text-sm md:text-base">123 Main Street, Suite 500, City, Country</p>
               </div>
               <div className="mb-4 flex items-center">
-                <FaPhoneAlt className="text-blue-500 text-2xl mr-4" />
-                <p className="text-gray-700">+1 (234) 567-8901</p>
+                <FaPhoneAlt className="text-blue-500 text-xl md:text-2xl mr-4" />
+                <p className="text-gray-700 text-sm md:text-base">+1 (234) 567-8901</p>
               </div>
               <div className="mb-4 flex items-center">
-                <FaEnvelope className="text-blue-500 text-2xl mr-4" />
-                <p className="text-gray-700">contact@yourcompany.com</p>
+                <FaEnvelope className="text-blue-500 text-xl md:text-2xl mr-4" />
+                <p className="text-gray-700 text-sm md:text-base">contact@yourcompany.com</p>
               </div>
               <div className="flex items-center">
-                <FaClock className="text-blue-500 text-2xl mr-4" />
-                <p className="text-gray-700">Mon-Fri: 9 AM - 5 PM</p>
+                <FaClock className="text-blue-500 text-xl md:text-2xl mr-4" />
+                <p className="text-gray-700 text-sm md:text-base">Mon-Fri: 9am - 5pm</p>
               </div>
             </div>
-
-            {/* Google Map Embed */}
-            <div className="mt-8 bg-white shadow-md rounded-lg border border-gray-200 overflow-hidden">
+                  {/* Google Map Embed */}
+                  <div className="mt-8 bg-white shadow-md rounded-lg border border-gray-200 overflow-hidden">
               <h3 className="text-2xl font-semibold p-6 text-gray-800">Find Us on the Map</h3>
               <iframe
                 className="w-full h-64"
@@ -231,9 +230,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        <ToastContainer />
       </div>
+      <ToastContainer />
     </div>
   );
 };
