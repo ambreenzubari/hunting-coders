@@ -10,8 +10,8 @@ const Navbar = () => {
     <nav className="bg-gray-800 shadow-md fixed top-0 w-full z-[50]">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo Section */}
-        <div className="text-white text-2xl font-bold">
-          <Link href="/">MyProject</Link>
+        <div className="text-white text-2xl font-bold w-auto whitespace-nowrap">
+          <Link href="/">Hunting Coder</Link>
         </div>
 
         {/* Mobile Menu Button */}

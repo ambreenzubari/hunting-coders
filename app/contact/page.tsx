@@ -166,6 +166,7 @@ const Contact = () => {
                   <textarea
                     id="desc"
                     name="desc"
+                    style={{resize:'none'}}
                     className={`w-full px-4 py-3 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
                       formik.touched.desc && formik.errors.desc ? "border-red-500" : ""
                     }`}
