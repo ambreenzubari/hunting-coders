@@ -44,7 +44,7 @@ const BlogPost = async ({ params }: any) => {
     <div className="min-h-screen bg-gray-50 p-8">
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
         {/* Header Section */}
-        <section className="relative bg-gray-900 text-white pt-24 px-6 text-center">
+        <section className="relative bg-gray-900 text-white pt-24 pb-10 px-6 text-center">
           <div className="absolute inset-0">
             <img
               src="/coder.jpg" // Replace with your image path
