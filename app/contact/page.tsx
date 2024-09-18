@@ -49,7 +49,7 @@ const Contact = () => {
 
         if (result.success) {
           setIsLoading(false);
-          toast.success("Data has been sent successfully!", {
+          toast.success("Message has been sent successfully!", {
             position: "top-right",
             autoClose: 3000,
           });
