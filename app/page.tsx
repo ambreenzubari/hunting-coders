@@ -6,7 +6,37 @@ export const metadata = {
   title: "NEXT JS PAGE",
   description: "My Page Description",
   icons: {
-    icon: "vercel.svg",
+    icon: "/icon.png", // Make sure the path is correct
+  },
+  // Add keywords for SEO
+  keywords: "Next.js, SEO, JavaScript, Web Development, Coding Tutorials",
+  // Open Graph meta tags for social sharing
+  openGraph: {
+    title: "NEXT JS PAGE - Empowering Developers",
+    description:
+      "Learn Next.js with our comprehensive tutorials and coding guides.",
+    url: "https://yourwebsite.com", // Your website URL
+    images: [
+      {
+        url: "/images/og-image.png", // Replace with an actual image
+        width: 800,
+        height: 600,
+        alt: "NEXT JS PAGE",
+      },
+    ],
+    type: "website",
+  },
+  // Twitter card metadata for better visibility on Twitter
+  twitter: {
+    card: "summary_large_image",
+    title: "NEXT JS PAGE - Empowering Developers",
+    description:
+      "Learn Next.js with our comprehensive tutorials and coding guides.",
+    images: ["/images/twitter-card-image.png"], // Replace with a valid image path
+  },
+  // Canonical URL to avoid duplicate content issues
+  alternates: {
+    canonical: "https://yourwebsite.com", // Add your actual site URL
   },
 };
 
