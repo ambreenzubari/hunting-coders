@@ -72,7 +72,7 @@ const Contact = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-50 to-blue-100 p-8">
+    <div className="min-h-screen/2 bg-gradient-to-r from-blue-50 to-blue-100 p-8">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-xl border border-gray-200 p-8">
         <h2 className="text-4xl font-extrabold text-gray-800 mb-8 text-center">
           Contact Us
@@ -173,7 +173,6 @@ const Contact = () => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     placeholder="Your message here..."
-                    rows="5"
                   />
                   <FaRegCommentDots className="text-gray-500 mt-3 mr-3" />
                 </div>
