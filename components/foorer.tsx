@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="flex flex-col">
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-            <p className="mb-2">Email: <a href="mailto:info@example.com" className="text-blue-400 hover:underline">info@example.com</a></p>
-            <p className="mb-2">Phone: <a href="tel:+1234567890" className="text-blue-400 hover:underline">+1 (234) 567-890</a></p>
+            <p className="mb-2">Email: <a href="mailto:contact@yourcompany.com" className="text-blue-400 hover:underline">info@example.com</a></p>
+            <p className="mb-2">Phone: <a href="tel:+1234567890" className="text-blue-400 hover:underline">+1 (234) 567-8901</a></p>
           </div>
 
           {/* Navigation Links */}
