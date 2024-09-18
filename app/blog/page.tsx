@@ -8,24 +8,32 @@ export default async function BlogPage() {
   const blogs = await response.json();
   
   return (
-    <div className="p-8 bg-gray-100 min-h-screen">
-      <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-extrabold text-center text-gray-900 mb-8">Popular Blogs</h1>
-        <div className="space-y-6">
+    <div className="p-8 bg-gradient-to-b from-blue-50 to-blue-100 min-h-screen">
+      <div className="max-w-5xl mx-auto bg-white p-10 rounded-lg shadow-lg">
+        {/* Header with black color */}
+        <h1 className="text-5xl font-bold text-center text-black mb-12">Popular Blogs</h1>
+
+        <ul className="space-y-8">
           {blogs.map((blog: any) => (
-            <div key={blog.id} className="border border-gray-300 rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
-                <Link href={`/blogpost/${blog.slug}`} className="hover:text-blue-500">
-                  {blog.title}
-                </Link>
-              </h2>
-              <p className="text-gray-600 mb-4">{blog.metaDesc}</p>
-              <Link href={`/blogpost/${blog.slug}`} className="text-blue-600 hover:underline">
+            <li key={blog.id} className="border-l-4 border-blue-500 pl-6 bg-white p-6 shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg">
+              <div className="flex justify-between items-center">
+                {/* Blog title with black color */}
+                <h2 className="text-2xl font-semibold text-black hover:text-blue-700 transition-colors duration-300">
+                  <Link href={`/blogpost/${blog.slug}`}>
+                    {blog.title}
+                  </Link>
+                </h2>
+              </div>
+              <p className="text-gray-700 mt-2">
+                {blog.metaDesc}
+              </p>
+              <Link href={`/blogpost/${blog.slug}`} className="mt-4 inline-block text-blue-500 hover:text-blue-600 font-semibold">
                 Read more &rarr;
               </Link>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
+
       </div>
     </div>
   );
